@@ -16,6 +16,7 @@
   <remote fetch="../seL4" name="seL4"/>
   <remote fetch="https://github.com/tass-belgium" name="picotcp" />
   <remote fetch="https://github.com/ruslo" name="polly" />
+  <remote fetch="." name="rel" />
 
   <default revision="master" remote="seL4"/>
   
@@ -32,7 +33,7 @@
   <project name="picotcp.git" path="projects/picotcp" remote="picotcp" revision="refs/tags/v1.7.0"/>
   <project name="seL4.git" path="kernel"/>
   <project name="seL4_libs" path="projects/seL4_libs"/>
-  <project name="rpi3-spi-net-filter.git" path="projects/rpi3-spi-net-filter"/>
+  <project name="rpi3-spi-net-filter.git" path="projects/rpi3-spi-net-filter" remote="rel"/>
   <project name="seL4_tools.git" path="projects/seL4_tools">
     <linkfile dest="init-build.sh" src="cmake-tool/init-build.sh"/>
   </project>
